@@ -25,7 +25,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Activites.MainActivity" />
         </activity>
-        <activity android:name=".Activites.GameOver"></activity>
+        <activity android:name=".Activites.GameOver" />
+        <activity android:name=".Activites.SignInActivity"></activity>
     </application>
 
 </manifest>

@@ -75,7 +75,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
+        android:inputType="numberSigned"
         android:text="@string/answer_txt"
         android:textColor="@android:color/holo_red_dark"
         android:textStyle="bold"

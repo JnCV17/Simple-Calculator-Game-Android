@@ -1,5 +1,6 @@
 package com.example.japo.myapplication.Activites;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.japo.myapplication.Activites.MainActivity;
 import com.example.japo.myapplication.Model.User;
@@ -51,10 +53,22 @@ public class Operar extends AppCompatActivity {
         //Correct Answer
         if(answer == result){
           currentUser.addCorrect();
+            Context context = getApplicationContext();
+            CharSequence text = "Correct";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
         }
 
         if(answer != result){
             currentUser.addError();
+            Context context = getApplicationContext();
+            CharSequence text = "Incorrect";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
         }
 
         //Validates User Count
